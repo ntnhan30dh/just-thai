@@ -1,0 +1,30 @@
+.story {
+  .headLine{
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    background-color: $secondary-colour;
+    // width: 100%;
+    .marquee{
+    width: 100%;
+    display:block;
+    position:relative;
+    animation:10s linear 0s infinite normal none running marquee;
+     font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: #e51a6d;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 40px 0;
+    }
+  }
+}
+@keyframes marquee{
+    0% {transform: translate(0);}
+    100% {transform: translate(-50%);}
+    }
