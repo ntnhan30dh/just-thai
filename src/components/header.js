@@ -66,15 +66,10 @@ const Header = props => {
         </div>
       </Sticky>
       <div className="bottom">
-      <h1>Thai Street Food delivered </h1>
-      <div className="imgContainer">
-      <div className="imgDiv">
-      <Img
-              className={"stickerDiv"}
-              fluid={data.headerPic.childImageSharp.fluid}
-            />
-      </div>
-      </div>
+        <h1>Thai Street Food delivered </h1>
+        <div className="imgDiv headerPic">
+          <Img className={"img"} fluid={data.headerPic.childImageSharp.fluid} />
+        </div>
       </div>
     </BackgroundImage>
   )

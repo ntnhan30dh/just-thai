@@ -3,9 +3,10 @@
     margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;
-    position: absolute;
+   // position: absolute;
     background-color: $secondary-colour;
     // width: 100%;
+    display: inline-block;
     .marquee{
     width: 100%;
     display:block;
@@ -22,6 +23,9 @@
     white-space: nowrap;
     padding: 40px 0;
     }
+  }
+  .pic1{
+width:20%
   }
 }
 @keyframes marquee{

@@ -27,3 +27,13 @@ html, body {
     flex-direction: row;
     background-color: aqua;
 }
+.imgDiv{
+    background-color: yellow;
+    position: relative;
+    // height: fit-content;
+      .img{
+        bottom: 10px;
+        right: 10px;
+      }
+    }
+  

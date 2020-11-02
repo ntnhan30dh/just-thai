@@ -64,19 +64,10 @@
         width: 50%;
         text-transform: uppercase;
     }
-    .imgContainer{
+    
+    .headerPic{
       width: 20%;
-      background-color: yellow;
-      position: relative;
-      // height: fit-content;
-      
-      .imgDiv{
-        width: 100%;
-       // position: absolute;
-        margin-left: -10px;
-       margin-bottom:10px;
-       margin-top:-10px;
-      }
     }
+   
   }
 }
