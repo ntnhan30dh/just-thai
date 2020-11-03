@@ -1,4 +1,5 @@
-$secondary-colour:  #e9e929;;
+$primary-colour:  #e51a6d;
+$secondary-colour:  #e9e929;
 
 @import "header";
 @import "story";
@@ -25,7 +26,6 @@ html, body {
 .row{
     display: flex;
     flex-direction: row;
-    background-color: aqua;
 }
 .imgDiv{
     background-color: yellow;
