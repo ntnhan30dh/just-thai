@@ -16,8 +16,7 @@
       align-items: center;
       width: 60%;
       justify-content: space-between;
-      background-color: $primary-colour;
-
+      
       ul {
         list-style: none;
         display: flex;
@@ -27,6 +26,7 @@
         width: 100%;
         // border: 2px solid yellow;
         li {
+          background-color: $primary-colour;
           a {
             font-size: 1.7rem;
             font-weight: normal;

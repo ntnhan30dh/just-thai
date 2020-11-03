@@ -2,6 +2,7 @@
   background-color: $primary-colour;
   position: relative;
   z-index: -1;
+  padding-bottom: 4rem;
   .headLine{
     margin: 0 auto;
     white-space: nowrap;
@@ -140,7 +141,7 @@
       img{
         position: absolute;
         top: 50%;
-        left: 60%;
+        left: 90%;
       }
      }
 

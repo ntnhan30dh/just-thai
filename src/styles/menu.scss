@@ -1,0 +1,179 @@
+.menu {
+  background-color: $primary-colour;
+  position: relative;
+  z-index: -1;
+  p{
+    font-size: 2.2rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .headLine{
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+   // position: absolute;
+    background-color: $secondary-colour;
+    // width: 100%;
+    display: inline-block;
+    .marquee{
+    width: 100%;
+    display:block;
+    position:relative;
+    animation:10s linear 0s infinite normal none running marquee;
+     font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+    color: #e51a6d;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 40px 0;
+    }
+  }
+  .topText{
+    padding: 0 15%;
+    h1 {
+      font-size: 4vw;
+      font-weight: 800;
+      font-stretch: normal;
+      font-style: italic;
+      line-height: 1.04;
+      letter-spacing: 0.02px;
+      text-align: center;
+      color: #ffffff;
+      padding: 5% 5% 0 5%;
+      text-transform: uppercase;
+
+    }
+    p{
+      padding: 2% 30%;
+    }
+  }
+  .article{
+    padding: 5% 15% 0% 15%;
+    .left{
+      width: 50%;
+      padding-left: 15%;
+      .iconYellow{
+        position: relative;
+       width: 13rem;
+       img{
+         position: absolute;
+         top: -5rem;
+         left: -7rem;
+       }
+      }
+      .articlePic{
+        width: 85%
+      }
+    }
+
+    .right{
+      width: 50%;
+      h1{
+          text-shadow: 7px 7px 0 #e51a6d;
+          font-size: 4vw;
+          font-weight: 800;
+          font-stretch: normal;
+          font-style: italic;
+          line-height: 1.04;
+          letter-spacing: 0.02px;
+          color: #e9e929;
+          margin-left: -30%;
+          position: relative;
+    text-transform: uppercase;
+      }
+      div{
+      // border: 1px solid yellow;
+       width: 80%;
+       text-align: right;
+      }
+      p{
+         text-align: left;
+         padding: 0 10%;
+         width: 100%;
+         min-width: 412px;
+      }
+    }
+  }
+
+  .tomYum{
+    padding: 5% 15% 0% 15%;
+    .left{
+      width: 50%;
+      padding-right: 15%;
+      .iconYellow{
+      position: relative;
+       width: 13rem;
+       img{
+         position: absolute;
+         top: -5rem;
+         right: -7rem;
+       }
+      }
+      .articlePic{
+        width: 85%
+      }
+    }
+
+    .right{
+      width: 50%;
+      h1{
+          text-shadow: 7px 7px 0 #e51a6d;
+          font-size: 4vw;
+          font-weight: 800;
+          font-stretch: normal;
+          font-style: italic;
+          line-height: 1.04;
+          letter-spacing: 0.02px;
+          color: #e9e929;
+          margin-right: -15%;
+          padding-left: 10% ;
+          position: relative;
+          text-transform: uppercase;
+          z-index: 10;
+      }
+      div{
+      // border: 1px solid yellow;
+       width: 80%;
+       text-align: right;
+      }
+      p{
+         text-align: left;
+         padding: 0 10%;
+         width: 100%;
+         min-width: 412px;
+      }
+    }
+  }
+  .bottom{
+    .bottomPic{
+      width:50%;
+    }
+    h1{
+      width: 100%;
+        text-shadow: 7px 7px 0 #e51a6d;
+        font-size: 7vw;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: 1.2;
+        letter-spacing: 0.02px;
+        color: #ffffff;
+    }
+    .oavalText{
+      width:30%;
+    }
+  }
+}
+@keyframes marquee{
+    0% {transform: translate(0);}
+    100% {transform: translate(-50%);}
+    }
