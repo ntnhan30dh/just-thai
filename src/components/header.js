@@ -6,6 +6,22 @@ import { Sticky } from "semantic-ui-react"
 import BackgroundImage from "gatsby-background-image"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
+import Plx from "react-plx"
+
+
+const parallaxMoveUp = [
+  {
+    start:'self',
+    duration: 300,
+    properties: [
+      {
+      startValue: 0,
+      endValue: 20,
+      property: "translateY"
+      },
+    ],
+  },
+];
 
 const Header = props => {
   const data = useStaticQuery(graphql`
@@ -33,7 +49,8 @@ const Header = props => {
 
   return (
     <BackgroundImage className="headerWrap" Tag="header" fluid={imageData}>
-      <Sticky>
+      
+    <Sticky>
         <div className="nav">
           <div className="leftDiv">
             <Link to="#" className="img_div">
@@ -69,6 +86,9 @@ const Header = props => {
         <h1>Thai Street Food delivered </h1>
         <div className="imgDiv headerPic">
           <Img className={"img"} fluid={data.headerPic.childImageSharp.fluid} />
+          <Plx  className="span" parallaxData={parallaxMoveUp}>
+            
+          </Plx>
         </div>
       </div>
     </BackgroundImage>

@@ -6,17 +6,19 @@ import React from "react"
  import Header from "../components/header"
  import Story from "../components/story"
  import Menu from "../components/menu"
-import 'semantic-ui-css/semantic.min.css'
-import SEO from "../components/seo"
-import "../styles/index.scss"
+ import Followus from "../components/followus"
+ //import SEO from "../components/seo"
+ import 'semantic-ui-css/semantic.min.css'
+ import "../styles/index.scss"
+ 
 
 const IndexPage = () => (
-  <div>
-    <SEO title="Home" />
+  <div className="pageWrap">
+    {/* <SEO title="Home" /> */}
     <Header/>
     <Story/>
     <Menu/>
-    
+    <Followus/>
     
   </div>
 )

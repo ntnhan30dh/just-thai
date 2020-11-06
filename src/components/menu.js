@@ -72,6 +72,9 @@ const Menu = () => {
           dishes and famous Thai noodles, including Pad Thai!
         </p>
       </div>
+      <div className="main">
+
+     
       <div className="article row">
         <div className="left">
           <div className="imgDiv articlePic">
@@ -150,16 +153,21 @@ const Menu = () => {
           </div>
         </div>
       </div>
-    <div className="bottom row">
-    <div className="imgDiv bottomPic">
-            <Img className={"img"} fluid={data.menuImgBottom.childImageSharp.fluid} />
-          </div>
-          <h1>Spicy, salty, 
-sweet and fresh </h1>
-<div className="imgDiv oavalText">
-            <Img className={"img"} fluid={data.ovalText.childImageSharp.fluid} />
-          </div>
-    </div>
+      </div>
+      <div className="bottom">
+        <div className="pics row">
+        <div className="imgDiv bottomPic">
+          <Img
+            className={"img"}
+            fluid={data.menuImgBottom.childImageSharp.fluid}
+          />
+        </div>
+        <div className="oavalText">
+          <Img className={"img"} fluid={data.ovalText.childImageSharp.fluid} />
+        </div>
+        </div>
+        <h1>Spicy, salty, sweet and fresh </h1>
+      </div>
     </section>
   )
 }

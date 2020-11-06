@@ -4,6 +4,28 @@ import { graphql, useStaticQuery } from "gatsby"
 import chicken from "../images/chicken.svg"
 import noddle from "../images/noddle.svg"
 import shrimp from "../images/shrimp.svg"
+import Plx from "react-plx"
+
+const parallaxMoveUp = [
+  {
+    start:'self',
+    duration: 50,
+    properties: [
+      {
+      startValue: 50,
+      endValue: 0,
+      property: "translateY"
+      },
+      {
+        startValue: 0.7,
+        endValue: 1,
+        property: "scale"
+      },
+      
+      
+    ],
+  },
+];
 
 const Story = () => {
   const data = useStaticQuery(graphql`

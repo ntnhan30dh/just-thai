@@ -1,0 +1,61 @@
+import React from "react"
+import BackgroundImage from "gatsby-background-image"
+import { graphql, useStaticQuery } from "gatsby"
+
+import logo from "../images/logo.png"
+import facebook from "../images/facebook.png"
+import instagram from "../images/instagram.png"
+
+
+const Followus = () => {
+  const data = useStaticQuery(graphql`
+    {
+      pic: file(relativePath: { eq: "followUsPic.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 700) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  `)
+
+  const imageData = data.pic.childImageSharp.fluid
+  return (
+    <div className="followUS">
+      <div className="top">
+        <div className="text">
+          <h1>Holiday in Thailand from home? Yes, please!</h1>
+        </div>
+        <BackgroundImage className="pic" fluid={imageData}></BackgroundImage>
+      </div>
+      <div className="bottom">
+        <div className="part left">
+            <h3>follow us</h3>
+            <div className="icons">
+            <div className="imgWrapper">
+            <img src={facebook} alt="facebook" />
+            </div>
+            <div className="imgWrapper">
+            <img src={instagram} alt="logo" />
+            </div>
+            </div>
+        </div>
+        <div className="part">
+            <div className="logoWrapper">
+            <img src={logo} alt="logo" />
+            </div>
+        </div>
+        <div className="part right">
+          <ul>
+            <li>Impressum </li>
+            <li>Privacy Policy Disclaimer</li>
+            <li>Terms & Conditions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Followus

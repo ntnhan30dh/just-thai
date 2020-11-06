@@ -1,7 +1,10 @@
 .menu {
-  background-color: $primary-colour;
+ background-color: $primary-colour;
+// background-color: skyblue;
   position: relative;
-  z-index: -1;
+  z-index: 1;
+  width: 100%;
+  
   p{
     font-size: 2.2rem;
     font-weight: normal;
@@ -38,7 +41,7 @@
     }
   }
   .topText{
-    padding: 0 15%;
+    padding: 0 20%;
     h1 {
       font-size: 4vw;
       font-weight: 800;
@@ -53,14 +56,19 @@
 
     }
     p{
-      padding: 2% 30%;
+      padding: 2% 20%;
     }
   }
+  .main{
+    width: 100%;
+    padding: 0 20%;
   .article{
-    padding: 5% 15% 0% 15%;
+    padding: 10% 0 0% 0;
+    width: 100%;
     .left{
       width: 50%;
-      padding-left: 15%;
+   //   padding-left: 15%;
+   margin: 0 2%;
       .iconYellow{
         position: relative;
        width: 13rem;
@@ -71,12 +79,13 @@
        }
       }
       .articlePic{
-        width: 85%
+        width: 100%
       }
     }
 
     .right{
       width: 50%;
+      margin: 3% 2% 0 2%;
       h1{
           text-shadow: 7px 7px 0 #e51a6d;
           font-size: 4vw;
@@ -97,7 +106,7 @@
       }
       p{
          text-align: left;
-         padding: 0 10%;
+        padding-top:10%;
          width: 100%;
          min-width: 412px;
       }
@@ -105,26 +114,36 @@
   }
 
   .tomYum{
-    padding: 5% 15% 0% 15%;
+    padding: 10% 0 0% 0;
     .left{
       width: 50%;
-      padding-right: 15%;
+      margin: 0 2%;
+     // padding-left: 15%;
+     //text-align: right;
+    // border: 1px solid yellow;
+     position: relative;
+
+
       .iconYellow{
-      position: relative;
+       position: relative;
        width: 13rem;
+       margin-left: 100%;
+
        img{
          position: absolute;
          top: -5rem;
-         right: -7rem;
+         right: 9rem;
        }
       }
       .articlePic{
-        width: 85%
+        width: 100%
       }
     }
 
     .right{
       width: 50%;
+      margin: 3% 2%;
+     // padding-left: 15%;
       h1{
           text-shadow: 7px 7px 0 #e51a6d;
           font-size: 4vw;
@@ -141,24 +160,43 @@
           z-index: 10;
       }
       div{
-      // border: 1px solid yellow;
-       width: 80%;
-       text-align: right;
+        width: 100%;
+        text-align: right;
+        //margin-left: 30%;
+      }
+      .iconWrap{
+       // border: 1px solid yellow;
+        text-align: left;
+
       }
       p{
          text-align: left;
-         padding: 0 10%;
+        padding-top:15%;
          width: 100%;
          min-width: 412px;
       }
     }
   }
+}
   .bottom{
-    .bottomPic{
-      width:50%;
-    }
-    h1{
+    padding: 5% 10%;
+    position: relative;
+    .pics{
       width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      border: 1pz solid yellow;
+      .bottomPic{
+        width:50%;
+      }
+      .oavalText{
+        width:35%;
+      }
+    }
+
+
+    h1{
+      width: 80%;
         text-shadow: 7px 7px 0 #e51a6d;
         font-size: 7vw;
         font-weight: 800;
@@ -167,9 +205,9 @@
         line-height: 1.2;
         letter-spacing: 0.02px;
         color: #ffffff;
-    }
-    .oavalText{
-      width:30%;
+        position: absolute;
+        top: 15%;
+        padding-left:15% ;
     }
   }
 }

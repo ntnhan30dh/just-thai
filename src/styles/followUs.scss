@@ -1,0 +1,77 @@
+.followUS {
+  .top {
+    min-height: 50vh;
+    display: flex;
+    .text {
+      width: 50%;
+      background-color: #a0bc4a;
+      padding: 0 7%;
+      display: flex;
+      justify-content: center; /* align horizontal */
+      align-items: center;
+
+      h1 {
+        text-shadow: 7px 7px 0 #e51a6d;
+        font-size: 4vw;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: 1.14;
+        letter-spacing: 0.02px;
+        color: #ffffff;
+      }
+    }
+    .pic{
+        width: 50%;
+    }
+  }
+  .bottom{
+      width: 100%;
+      display: flex;
+      background-color: $secondary-colour;
+      padding: 5rem 0;
+      .part{
+          width: 33%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .left{
+        h3 {
+            font-size: 3vw;
+            font-weight: 800;
+            font-stretch: normal;
+            font-style: italic;
+            line-height: normal;
+            letter-spacing: 1.46px;
+            color: $primary-colour;
+          
+          }
+        flex-direction: column;
+        .icons{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .imgWrapper{
+                padding: 5px;
+            }
+        }
+      }
+
+      .right {
+        ul{
+            font-size: 22px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.59;
+            letter-spacing: 0px;
+            text-align: center;
+            color: $primary-colour;
+            list-style-type: none;
+            text-decoration: underline;
+        }
+      }
+  }
+}
