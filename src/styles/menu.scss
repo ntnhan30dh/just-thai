@@ -27,7 +27,7 @@
     width: 100%;
     display:block;
     position:relative;
-    animation:10s linear 0s infinite normal none running marquee;
+    animation:15s linear 0s infinite normal none running marquee;
      font-size: 20px;
     font-weight: normal;
     font-stretch: normal;
@@ -42,6 +42,10 @@
   }
   .topText{
     padding: 0 20%;
+    @media screen and (max-width: 1200px) {
+      padding: 0 15%;
+    }
+    
     h1 {
       font-size: 4vw;
       font-weight: 800;
@@ -62,6 +66,14 @@
   .main{
     width: 100%;
     padding: 0 20%;
+    @media screen and (max-width: 1400px) {
+      padding: 0 15%;
+    }
+    @media screen and (max-width: 1200px) {
+      padding: 0 10%;
+    }
+    
+    
   .article{
     padding: 10% 0 0% 0;
     width: 100%;
@@ -105,6 +117,9 @@
       // border: 1px solid yellow;
        width: 80%;
        text-align: right;
+       @media screen and (max-width: 1200px) {
+        width: 70%;
+      }
       }
       p{
          text-align: left;
@@ -112,6 +127,15 @@
          width: 100%;
          min-width: 412px;
       }
+      .iconWrap{
+        position: relative;
+        img{
+          position: absolute;
+          top: -40px;
+          right: -150px;
+        }
+      }
+
     }
   }
 
@@ -157,10 +181,14 @@
           letter-spacing: 0.02px;
           color: #e9e929;
           margin-right: -15%;
-          padding-left: 10% ;
+           padding-left: 10% ;
           position: relative;
           text-transform: uppercase;
           z-index: 10;
+          @media screen and (max-width: 1200px) {
+             padding-left: 30%;
+          }
+         
       }
       div{
         width: 100%;
@@ -168,9 +196,14 @@
         //margin-left: 30%;
       }
       .iconWrap{
-       // border: 1px solid yellow;
+        position: relative;
         text-align: left;
-
+        img{
+          transform: rotate(-20deg);
+          position: absolute;
+          top: -60px;
+          left: -100px;
+        }
       }
       p{
          text-align: left;
@@ -182,7 +215,7 @@
   }
 }
   .bottom{
-    padding: 5% 10%;
+    padding: 10% 10% 5% 10%;
     position: relative;
     .pics{
       width: 100%;
@@ -209,7 +242,7 @@
         letter-spacing: 0.02px;
         color: #ffffff;
         position: absolute;
-        top: 15%;
+        top: 25%;
         padding-left:15% ;
         z-index: 10;
     }

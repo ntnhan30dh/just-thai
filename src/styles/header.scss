@@ -29,6 +29,7 @@
         // border: 2px solid yellow;
         li {
           background-color: $primary-colour;
+          padding: 5px 10px;
           a {
             font-size: 1.7rem;
             font-weight: normal;
@@ -59,6 +60,7 @@
         text-shadow: 7px 7px 0 #e51a6d;
         // font-family: Rubik;
         font-size: 6vw;
+        //font-size: max(6vw, 70px);
         font-weight: 800;
         font-stretch: normal;
         font-style: italic;

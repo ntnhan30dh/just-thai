@@ -15,7 +15,7 @@ const parallaxMoveUp = [
     duration: 300,
     properties: [
       {
-      startValue: -10,
+      startValue: -20,
       endValue: 0,
       property: "translateX"
       },
