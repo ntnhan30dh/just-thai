@@ -6,26 +6,21 @@ import noddle from "../images/noddle.svg"
 import shrimp from "../images/shrimp.svg"
 import Plx from "react-plx"
 
+
 const parallaxMoveUp = [
   {
     start:'self',
-    duration: 50,
+    duration: 300,
     properties: [
       {
-      startValue: 50,
+      startValue: -10,
       endValue: 0,
-      property: "translateY"
+      property: "translateX"
       },
-      {
-        startValue: 0.7,
-        endValue: 1,
-        property: "scale"
-      },
-      
-      
     ],
   },
 ];
+
 
 const Story = () => {
   const data = useStaticQuery(graphql`
@@ -64,7 +59,7 @@ const Story = () => {
     }
   `)
   return (
-    <section className="story">
+    <section className="story" id="story">
       <div className="headLine">
         <div className="marquee">
           Our story • Our story • Our story • Our story • Our story • Our story
@@ -78,6 +73,8 @@ const Story = () => {
       <div className="div1 row ">
         <div className="imgDiv pic1">
           <Img className={"img"} fluid={data.pic1.childImageSharp.fluid} />
+          <Plx  className="span" parallaxData={parallaxMoveUp}>
+          </Plx>
         </div>
         <div className="text">
           Ordering from Just Thai is like having a Thai grandma cook authentic
@@ -91,6 +88,8 @@ const Story = () => {
         </div>
         <div className="imgDiv pic2">
           <Img className={"img"} fluid={data.pic2.childImageSharp.fluid} />
+          <Plx  className="span" parallaxData={parallaxMoveUp}>
+          </Plx>
         </div>
         <div className="noddleWrap">
           <img src={noddle} alt="noddle" />
@@ -106,12 +105,16 @@ const Story = () => {
         </div>
         <div className="imgDiv pic4">
           <Img className={"img"} fluid={data.pic4.childImageSharp.fluid} />
+          <Plx  className="span" parallaxData={parallaxMoveUp}>
+          </Plx>
         </div>
       </div>
       <div className="div5 row">
         <div className="text">TRUE LOCAL</div>
         <div className="imgDiv pic5">
           <Img className={"img"} fluid={data.pic5.childImageSharp.fluid} />
+          <Plx  className="span" parallaxData={parallaxMoveUp}>
+          </Plx>
         </div>
         <div className="shrimpWrap">
           <img src={shrimp} alt="shrimp" />

@@ -9,8 +9,8 @@ import React from "react"
  import Followus from "../components/followus"
  //import SEO from "../components/seo"
  import 'semantic-ui-css/semantic.min.css'
- import "../styles/index.scss"
  
+ import "../styles/index.scss"
 
 const IndexPage = () => (
   <div className="pageWrap">

@@ -1,7 +1,7 @@
 .headerWrap {
   height: 50vw;
-//   position: relative;
-//  z-index: 100;
+  position: relative;
+ z-index: 100;
   .nav {
     display: flex;
     flex-direction: row;
@@ -71,6 +71,9 @@
     
     .headerPic{
       width: 20%;
+      position: relative;
+      z-index: -1;
+      
     }
    
   }

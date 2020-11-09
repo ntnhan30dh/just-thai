@@ -22,7 +22,7 @@ const Followus = () => {
 
   const imageData = data.pic.childImageSharp.fluid
   return (
-    <div className="followUS">
+    <div className="followUS" id="follow">
       <div className="top">
         <div className="text">
           <h1>Holiday in Thailand from home? Yes, please!</h1>

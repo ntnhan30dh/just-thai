@@ -2,7 +2,7 @@ import React from "react"
 import logo from "../images/logo.png"
 import OrderNow from "./ordernow"
 import { Link } from "gatsby"
-import { Sticky } from "semantic-ui-react"
+import Sticky from 'react-sticky-el';
 import BackgroundImage from "gatsby-background-image"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
@@ -15,9 +15,9 @@ const parallaxMoveUp = [
     duration: 300,
     properties: [
       {
-      startValue: 0,
-      endValue: 20,
-      property: "translateY"
+      startValue: -10,
+      endValue: 0,
+      property: "translateX"
       },
     ],
   },
@@ -75,7 +75,7 @@ const Header = props => {
                 <Link to="#follow">Follow Us</Link>
               </li>
               <li>
-                <Link to="#contact">Contact</Link>
+                <Link to="#follow">Contact</Link>
               </li>
             </ul>
             <OrderNow />
@@ -87,7 +87,6 @@ const Header = props => {
         <div className="imgDiv headerPic">
           <Img className={"img"} fluid={data.headerPic.childImageSharp.fluid} />
           <Plx  className="span" parallaxData={parallaxMoveUp}>
-            
           </Plx>
         </div>
       </div>

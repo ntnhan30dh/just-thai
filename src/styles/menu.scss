@@ -72,6 +72,7 @@
       .iconYellow{
         position: relative;
        width: 13rem;
+       z-index: 10;
        img{
          position: absolute;
          top: -5rem;
@@ -98,6 +99,7 @@
           margin-left: -30%;
           position: relative;
     text-transform: uppercase;
+    z-index: 10;
       }
       div{
       // border: 1px solid yellow;
@@ -128,6 +130,7 @@
        position: relative;
        width: 13rem;
        margin-left: 100%;
+       z-index: 10;
 
        img{
          position: absolute;
@@ -208,6 +211,7 @@
         position: absolute;
         top: 15%;
         padding-left:15% ;
+        z-index: 10;
     }
   }
 }

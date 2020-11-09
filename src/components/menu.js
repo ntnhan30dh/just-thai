@@ -7,6 +7,21 @@ import noddle from "../images/noddle.svg"
 import noddleYellow from "../images/noddle-yellow.png"
 import shrimp from "../images/shrimp.svg"
 import chicken from "../images/chicken.svg"
+import Plx from "react-plx"
+
+const parallaxMoveUp = [
+  {
+    start:'self',
+    duration: 300,
+    properties: [
+      {
+      startValue: -10,
+      endValue: 0,
+      property: "translateX"
+      },
+    ],
+  },
+];
 
 const Menu = () => {
   const data = useStaticQuery(graphql`
@@ -53,7 +68,7 @@ const Menu = () => {
     }
   `)
   return (
-    <section className="menu">
+    <section className="menu" id="menu">
       <div className="headLine">
         <div className="marquee">
           Menu • Menu • Menu • Menu • Menu • Menu • Menu • Menu • Menu • Menu •
@@ -79,7 +94,10 @@ const Menu = () => {
         <div className="left">
           <div className="imgDiv articlePic">
             <Img className={"img"} fluid={data.rolls.childImageSharp.fluid} />
+            <Plx  className="span" parallaxData={parallaxMoveUp}>
+          </Plx>
           </div>
+
           <div className="iconYellow">
             <img src={leaf} alt="leaf" />
           </div>
@@ -123,6 +141,8 @@ const Menu = () => {
         <div className="left">
           <div className="imgDiv articlePic">
             <Img className={"img"} fluid={data.tomYum.childImageSharp.fluid} />
+            <Plx  className="span" parallaxData={parallaxMoveUp}>
+          </Plx>
           </div>
           <div className="iconYellow">
             <img src={noddleYellow} alt="noddleYellow" />
@@ -133,6 +153,8 @@ const Menu = () => {
         <div className="left">
           <div className="imgDiv articlePic">
             <Img className={"img"} fluid={data.padThai.childImageSharp.fluid} />
+            <Plx  className="span" parallaxData={parallaxMoveUp}>
+          </Plx>
           </div>
           <div className="iconYellow">
             <img src={rice} alt="rice" />
@@ -161,9 +183,12 @@ const Menu = () => {
             className={"img"}
             fluid={data.menuImgBottom.childImageSharp.fluid}
           />
+          <Plx  className="span" parallaxData={parallaxMoveUp}>
+          </Plx>
         </div>
         <div className="oavalText">
           <Img className={"img"} fluid={data.ovalText.childImageSharp.fluid} />
+          
         </div>
         </div>
         <h1>Spicy, salty, sweet and fresh </h1>
