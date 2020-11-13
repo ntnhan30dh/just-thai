@@ -1,34 +1,42 @@
-import React from "react"
+import React, { useState } from "react"
 import logo from "../images/logo.png"
 import OrderNow from "./ordernow"
 import { Link } from "gatsby"
-import Sticky from 'react-sticky-el';
+import Sticky from "react-sticky-el"
 import BackgroundImage from "gatsby-background-image"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 import Plx from "react-plx"
 
-
 const parallaxMoveUp = [
   {
-    start:'self',
+    start: "self",
     duration: 300,
     properties: [
       {
-      startValue: -20,
-      endValue: 0,
-      property: "translateX"
+        startValue: -20,
+        endValue: 0,
+        property: "translateX",
       },
     ],
   },
-];
+]
 
 const Header = props => {
+  const [windowSize, setWindowSize] = useState(window.innerWidth)
   const data = useStaticQuery(graphql`
     {
       bgBig: file(relativePath: { eq: "bg-header-1.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1500) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      bgBig2: file(relativePath: { eq: "bg-header-2.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 1000) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -46,11 +54,22 @@ const Header = props => {
   // let menuActive = props.menuState ? "is-inactive" : ""
   // let change = props.menuState ? "change" : ""
   const imageData = data.bgBig.childImageSharp.fluid
+  const imageData2 = data.bgBig2.childImageSharp.fluid
+  const handleResize = () => {
+    setWindowSize(window.innerWidth)
+    console.log(window.innerWidth)
+  }
+  window.addEventListener("resize", handleResize)
+
+    
 
   return (
-    <BackgroundImage className="headerWrap" Tag="header" fluid={imageData}>
-      
-    <Sticky>
+    <BackgroundImage
+      className="headerWrap"
+      Tag="header"
+      fluid={windowSize > 1000 ? imageData : imageData2}
+    >
+      <Sticky>
         <div className="nav">
           <div className="leftDiv">
             <Link to="#" className="img_div">
@@ -86,8 +105,7 @@ const Header = props => {
         <h1>Thai Street Food delivered </h1>
         <div className="imgDiv headerPic">
           <Img className={"img"} fluid={data.headerPic.childImageSharp.fluid} />
-          <Plx  className="span" parallaxData={parallaxMoveUp}>
-          </Plx>
+          <Plx className="span" parallaxData={parallaxMoveUp}></Plx>
         </div>
       </div>
     </BackgroundImage>

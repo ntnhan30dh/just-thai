@@ -12,7 +12,7 @@ const Followus = () => {
     {
       pic: file(relativePath: { eq: "followUsPic.png" }) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 700) {
+          fluid( maxWidth: 900) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -25,7 +25,7 @@ const Followus = () => {
     <div className="followUS" id="follow">
       <div className="top">
         <div className="text">
-          <h1>Holiday in Thailand from home? Yes, please!</h1>
+          <h1>Holiday in Thailand <br/> from home? <br/> Yes, please!</h1>
         </div>
         <BackgroundImage className="pic" fluid={imageData}></BackgroundImage>
       </div>

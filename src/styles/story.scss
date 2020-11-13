@@ -3,103 +3,143 @@
   position: relative;
   z-index: 1;
   padding-bottom: 4rem;
-  .headLine{
+  @media screen and (max-width: $tablet) {
+    padding-bottom: 0;
+
+  }
+  .headLine {
     margin: 0 auto;
     white-space: nowrap;
     overflow: hidden;
-   // position: absolute;
+    // position: absolute;
     background-color: $secondary-colour;
     // width: 100%;
     display: inline-block;
-    .marquee{
-    width: 100%;
-    display:block;
-    position:relative;
-    animation:15s linear 0s infinite normal none running marquee;
-     font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0px;
-    color: #e51a6d;
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 40px 0;
+    .marquee {
+      width: 100%;
+      display: block;
+      position: relative;
+      animation: 15s linear 0s infinite normal none running marquee;
+      font-size: 20px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0px;
+      color: #e51a6d;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 40px 0;
     }
   }
 
-  .div1{
+  .div1 {
     padding: 7rem 10% 0 10%;
     justify-content: space-between;
     // display: inline-block;
     width: 100%;
     //  border: 1px solid yellow;
-    .pic1{
-  width:50%;
+    .pic1 {
+      width: 50%;
+      @media screen and (max-width: $tablet) {
+        width: 70%;
+      }
     }
 
-    .text{
-        margin-top:5%;
-        width:25%;
-        width: 370px;
-        font-size: 2.2rem;
-        font-weight: lighter;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.36;
-        letter-spacing: 0px;
-        text-align: right;
-        color: #ffffff;
-    
+    .text {
+      margin-top: 5%;
+      width: 40%;
+      font-size: 2.2rem;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.36;
+      letter-spacing: 0px;
+      text-align: left;
+      color: #ffffff;
+      @media screen and (max-width: $tablet) {
+        display: none;
+      }
+    }
+
+    .noddleWrap_tablet{
+      position: relative;
+      width: 10rem;
+
+      img {
+        position: absolute;
+        top: 10%;
+      }
+
+      @media screen and (min-width: $tablet) {
+        display: none;
+      }
     }
   }
 
-  .div2{
+  .div2 {
     padding: 0 8% 0 10%;
     width: 100%;
     justify-content: space-between;
     .chickenWrap {
-     position: relative;
-     width: 100px;
-     img{
-       position: absolute;
-       top: 50%;
-     }
+      position: relative;
+      width: 100px;
+      @media screen and (max-width: $tablet) {
+        display: none;
+      }
+      img {
+        position: absolute;
+        top: 50%;
+      }
     }
-    .pic2{
+    .pic2 {
       width: 30%;
       margin: -5% 0 0 -20%;
+      @media screen and (max-width: $tablet) {
+        width: 100%;
+        margin: -15% 0% 0 60%;
+      }
+    }
+
+    .noddleWrap {
+      @media screen and (max-width: $tablet) {
+        display: none;
+      }
     }
   }
 
-  .div3{
-      //width: 50%;
-      padding:0 10% 0 45%;
-      text-shadow: 7px 7px 0 $primary-colour;
-      font-size: 6vw;
-      font-weight: 800;
-      font-stretch: normal;
-      font-style: italic;
-      line-height: 1.12;
-      letter-spacing: 0.02px;
-      color: $secondary-colour; 
-      margin-top: -10%;
-      position: relative;
-      z-index: 10;
-      text-transform: uppercase;
+  .div3 {
+    //width: 50%;
+    padding: 0 10% 0 45%;
+    text-shadow: 7px 7px 0 $primary-colour;
+    font-size: 6vw;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.12;
+    letter-spacing: 0.02px;
+    color: $secondary-colour;
+    margin-top: -10%;
+    position: relative;
+    z-index: 10;
+    text-transform: uppercase;
+    @media screen and (max-width: $tablet) {
+      padding: 0 30% 0 15%;
+      margin-top: -20%;
+      font-size: 7vw;   
+    }
   }
 
-  .div4{
+  .div4 {
     padding: 0 20% 0 10%;
     justify-content: space-between;
-    // @media screen and (max-width: 1200px) {
-    //   padding: 0 10% 0 20%;
-    // }
+    @media screen and (max-width: $tablet) {
+      padding: 0 8% 0 10%;
+    }
     .text {
       margin: -5% 0 0 0;
       width: 25%;
-      min-width:  280px;;
+      min-width: 280px;
       font-size: 2.2rem;
       font-weight: normal;
       font-stretch: normal;
@@ -108,26 +148,45 @@
       letter-spacing: 0px;
       color: #ffffff;
       // transition: width 1s ease;
-      @media screen and (max-width: 1200px) {
-        // width: 50%;
+      @media screen and (max-width: $tablet) {
+        display: none;
       }
+
     }
-    .pic4{
+        .chickenWrap_tablet{
+          position: relative;
+          width: 100px;
+        
+          img {
+            position: absolute;
+            left: 60%;
+            top: 10%;
+          }
+
+          @media screen and (min-width: $tablet) {
+            display: none;
+          }
+        }
+    .pic4 {
       width: 55%;
       margin: 5% 0 0 0;
       z-index: 10;
       @media screen and (max-width: 1200px) {
         margin: 5% -10% 0 0;
       }
-
+      @media screen and (max-width: $tablet) {
+        width: 70%;
+        margin: 0 0 0 0;
+      }
     }
   }
 
-  .div5{
+  .div5 {
     padding: 0 25% 0 10%;
-    // @media screen and (max-width: 1200px) {
-    //   padding: 0 15% 0 20%;
-    // }
+    @media screen and (max-width: $tablet) {
+    //  padding: 0 25% 0 10%;
+      position: relative;
+    }
     .text {
       text-shadow: 7px 7px 0 $primary-colour;
       font-size: 6vw;
@@ -136,36 +195,80 @@
       font-style: italic;
       line-height: 1.12;
       letter-spacing: 0.02px;
-      color: $secondary-colour; 
+      color: $secondary-colour;
       position: relative;
       z-index: 10;
       margin-right: -15%;
       margin-top: 4%;
       width: 70%;
+      @media screen and (max-width: $tablet) {
+        display: none;
+      }
     }
-
-    .pic5{
+    .pic5 {
       width: 60%;
       margin: -10% 0 0 -5%;
       @media screen and (max-width: 1200px) {
         margin: -10% -10% 0 -5%;
+      }
+      @media screen and (max-width: $tablet) {
+        margin: -20% -10% 0 0%;
       }
     }
 
     .shrimpWrap {
       position: relative;
       width: 100px;
-      img{
+      img {
         position: absolute;
         top: 50%;
         left: 150%;
+        @media screen and (max-width: $tablet) {
+        top: 30%;
+        left: 250%;
+        }
       }
-     }
-
-
+    }
+  }
+  .trueLocal_tablet {
+      text-shadow: 7px 7px 0 $primary-colour;
+          font-size: 7vw;
+          font-weight: 800;
+          font-stretch: normal;
+          font-style: italic;
+          line-height: 1.12;
+          letter-spacing: 0.02px;
+          color: $secondary-colour;
+          position: absolute;
+          z-index: 10;
+          width: 100%;
+          top: -90%;
+          left: 20%;
+          @media screen and (min-width: $tablet) {
+            display: none;
+          }
+          
+    }
+}
+.text_tablet {
+  font-size: 2.2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #ffffff;
+  padding: 5% 15%;
+  @media screen and (min-width: $tablet) {
+    display: none;
   }
 }
-@keyframes marquee{
-    0% {transform: translate(0);}
-    100% {transform: translate(-50%);}
-    }
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-50%);
+  }
+}

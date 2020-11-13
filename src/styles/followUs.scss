@@ -2,14 +2,15 @@
   .top {
     min-height: 50vh;
     display: flex;
+    width: 100%;
     .text {
       width: 50%;
       background-color: #a0bc4a;
-      padding: 0 7%;
       display: flex;
-      justify-content: center; /* align horizontal */
+      // justify-content: start; /* align horizontal */
       align-items: center;
-
+      padding: 0 10%;
+      
       h1 {
         text-shadow: 7px 7px 0 #e51a6d;
         font-size: 4vw;
@@ -45,6 +46,7 @@
             line-height: normal;
             letter-spacing: 1.46px;
             color: $primary-colour;
+            text-transform: uppercase;
           
           }
         flex-direction: column;

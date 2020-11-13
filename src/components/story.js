@@ -81,6 +81,9 @@ const Story = () => {
           meals on a food stall in Bangkok – and delivering them to you, no
           matter where you are.
         </div>
+        <div className="noddleWrap_tablet">
+          <img src={noddle} alt="noddle" />
+        </div>
       </div>
       <div className="div2 row">
         <div className="chickenWrap">
@@ -95,13 +98,22 @@ const Story = () => {
           <img src={noddle} alt="noddle" />
         </div>
       </div>
+      
       <div className="div3 ">Crunchy, spicy, fresh, flavourful</div>
+      <div className="text_tablet">
+          Ordering from Just Thai is like having a Thai grandma cook authentic
+          meals on a food stall in Bangkok – and delivering them to you, no
+          matter where you are.
+        </div>
       <div className="div4 row">
         <div className="text">
           While we draw inspiration from the bustling Thai street food culture
           to offer an outstanding variety of flavours, we also pride ourselves
           in carefully selecting healthy ingredients and the best recipes to
           serve you, like a true local would do.
+        </div>
+        <div className="chickenWrap_tablet">
+          <img src={chicken} alt="chicken" />
         </div>
         <div className="imgDiv pic4">
           <Img className={"img"} fluid={data.pic4.childImageSharp.fluid} />
@@ -111,6 +123,9 @@ const Story = () => {
       </div>
       <div className="div5 row">
         <div className="text">TRUE LOCAL</div>
+        <div className="trueLocal_tablet">
+      TRUE LOCAL
+      </div>
         <div className="imgDiv pic5">
           <Img className={"img"} fluid={data.pic5.childImageSharp.fluid} />
           <Plx  className="span" parallaxData={parallaxMoveUp}>
@@ -119,7 +134,15 @@ const Story = () => {
         <div className="shrimpWrap">
           <img src={shrimp} alt="shrimp" />
         </div>
+        {/* <div className="text_tablet">TRUE LOCAL</div> */}
       </div>
+     
+      <div className="text_tablet">
+          While we draw inspiration from the bustling Thai street food culture
+          to offer an outstanding variety of flavours, we also pride ourselves
+          in carefully selecting healthy ingredients and the best recipes to
+          serve you, like a true local would do.
+        </div>
     </section>
   )
 }

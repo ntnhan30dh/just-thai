@@ -60,7 +60,7 @@ const Menu = () => {
 
       ovalText: file(relativePath: { eq: "oval-text.png" }) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 500) {
+          fluid(quality: 100, maxWidth: 900) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -80,7 +80,7 @@ const Menu = () => {
         </div>
       </div>
       <div className="topText">
-        <h1>Check our favourites from our menu</h1>
+        <h1>Check the favourites from our menu</h1>
         <p>
           Thai-me to get excited! With Just Thai you can enjoy a variety of
           all-time classics and modern Street Food specialties like soups, rise
