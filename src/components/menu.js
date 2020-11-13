@@ -1,5 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
+import BackgroundImage from "gatsby-background-image"
 import { graphql, useStaticQuery } from "gatsby"
 import leaf from "../images/leaf.png"
 import rice from "../images/rice.png"
@@ -52,7 +53,16 @@ const Menu = () => {
 
       menuImgBottom: file(relativePath: { eq: "menu-img-bottom.png" }) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 500) {
+          fluid( maxWidth: 900) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+     
+
+      menuImgBottom_tablet: file(relativePath: { eq: "menu-img-bottom_tablet.png" }) {
+        childImageSharp {
+          fluid( maxWidth: 900) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -67,6 +77,8 @@ const Menu = () => {
       }
     }
   `)
+
+  const imageData = data.menuImgBottom_tablet.childImageSharp.fluid
   return (
     <section className="menu" id="menu">
       <div className="headLine">
@@ -187,6 +199,7 @@ const Menu = () => {
       </div>
       <div className="bottom">
         <div className="pics row">
+          <BackgroundImage className="bottomPic_tablet" fluid={imageData}></BackgroundImage>
           <div className="imgDiv bottomPic">
             <Img
               className={"img"}
