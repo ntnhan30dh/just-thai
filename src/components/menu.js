@@ -11,17 +11,17 @@ import Plx from "react-plx"
 
 const parallaxMoveUp = [
   {
-    start:'self',
+    start: "self",
     duration: 300,
     properties: [
       {
-      startValue: -20,
-      endValue: 0,
-      property: "translateX"
+        startValue: -20,
+        endValue: 0,
+        property: "translateX",
       },
     ],
   },
-];
+]
 
 const Menu = () => {
   const data = useStaticQuery(graphql`
@@ -88,108 +88,118 @@ const Menu = () => {
         </p>
       </div>
       <div className="main">
-
-     
-      <div className="article row">
-        <div className="left">
-          <div className="imgDiv articlePic">
-            <Img className={"img"} fluid={data.rolls.childImageSharp.fluid} />
-            <Plx  className="span" parallaxData={parallaxMoveUp}>
-          </Plx>
-          </div>
-
-          <div className="iconYellow">
-            <img src={leaf} alt="leaf" />
-          </div>
-        </div>
-        <div className="right">
-          <h1>
-            Just Spring
-            <div>
-              <h1>rolls</h1>
+        <div className="article row">
+          <h2>Just Spring rolls</h2>
+          <div className="left">
+            <div className="imgDiv articlePic">
+              <Img className={"img"} fluid={data.rolls.childImageSharp.fluid} />
+              <Plx className="span" parallaxData={parallaxMoveUp}></Plx>
             </div>
-          </h1>
-          <p>
-            Everyone knows them, everyone loves them: Vegetarian spring rolls
-            Thai cuisine crispy classics. We prepare them according to the
-            recipe of our favorite cook Nang from the street food market in
-            Bangkok and deliver them to you, with a fruity-sweet chili sauce.
-          </p>
-          <div className="iconWrap">
-            <img src={chicken} alt="chicken" />
-          </div>
-        </div>
-      </div>
-      <div className="tomYum row">
-        <div className="right">
-          <h1>
-            Tom Yum
-            <div>
-              <h1>Yum Soup</h1>
+
+            <div className="iconYellow">
+              <img src={leaf} alt="leaf" />
             </div>
-          </h1>
-          <p>
-            No soup combines pleasant spicy and sour flavours as good as Tom
-            Yum. A strong broth ensures an intense taste, kaffir lime leaves and
-            lemongrass give the whole thing a fruity kick. Choose whether you
-            want to go with chicken, tofu or shrimp. Yum Yummy!
-          </p>
-          <div className="iconWrap">
-            <img src={shrimp} alt="shrimp" />
+          </div>
+          <div className="right">
+            <h1>
+              Just Spring
+              <div>
+                <h1>rolls</h1>
+              </div>
+            </h1>
+            <p>
+              Everyone knows them, everyone loves them: Vegetarian spring rolls
+              Thai cuisine crispy classics. We prepare them according to the
+              recipe of our favorite cook Nang from the street food market in
+              Bangkok and deliver them to you, with a fruity-sweet chili sauce.
+            </p>
+            <div className="iconWrap">
+              <img src={chicken} alt="chicken" />
+            </div>
           </div>
         </div>
-        <div className="left">
-          <div className="imgDiv articlePic">
-            <Img className={"img"} fluid={data.tomYum.childImageSharp.fluid} />
-            <Plx  className="span" parallaxData={parallaxMoveUp}>
-          </Plx>
+        <div className="tomYum row">
+          <div className="right">
+            <h1>
+              Tom Yum
+              <div>
+                <h1>Yum Soup</h1>
+              </div>
+            </h1>
+            <p>
+              No soup combines pleasant spicy and sour flavours as good as Tom
+              Yum. A strong broth ensures an intense taste, kaffir lime leaves
+              and lemongrass give the whole thing a fruity kick. Choose whether
+              you want to go with chicken, tofu or shrimp. Yum Yummy!
+            </p>
+            <div className="iconWrap">
+              <img src={shrimp} alt="shrimp" />
+            </div>
           </div>
-          <div className="iconYellow">
-            <img src={noddleYellow} alt="noddleYellow" />
+          <div className="left">
+            <div className="imgDiv articlePic">
+              <Img
+                className={"img"}
+                fluid={data.tomYum.childImageSharp.fluid}
+              />
+              <Plx className="span" parallaxData={parallaxMoveUp}></Plx>
+            </div>
+            <div className="iconYellow">
+              <img src={noddleYellow} alt="noddleYellow" />
+            </div>
+          </div>
+          <h2>
+              Tom Yum
+              <div>
+                <h2>Yum Soup</h2>
+              </div>
+            </h2>
+        </div>
+        <div className="article row">
+        <h2>Just Pad Thai</h2>
+          <div className="left">
+            <div className="imgDiv articlePic">
+              <Img
+                className={"img"}
+                fluid={data.padThai.childImageSharp.fluid}
+              />
+              <Plx className="span" parallaxData={parallaxMoveUp}></Plx>
+            </div>
+            <div className="iconYellow">
+              <img src={rice} alt="rice" />
+            </div>
+          </div>
+          <div className="right">
+            <h1>Just Pad Thai</h1>
+            <p>
+              Thanks to its unique taste, Pad Thai is without doubt # 1 on every
+              street food market. Our original recipe with rice noodles, spring
+              onions, tamarind, lime, peanuts and some chilli brings the aroma
+              of Thailand straight to your home. You chose your level of
+              spiciness adding our Sriracha sauce. Thai decision: Order it with
+              chicken, tofu or shrimps.
+            </p>
+            <div className="iconWrap">
+              <img src={noddle} alt="noddle" />
+            </div>
           </div>
         </div>
-      </div>
-      <div className="article row">
-        <div className="left">
-          <div className="imgDiv articlePic">
-            <Img className={"img"} fluid={data.padThai.childImageSharp.fluid} />
-            <Plx  className="span" parallaxData={parallaxMoveUp}>
-          </Plx>
-          </div>
-          <div className="iconYellow">
-            <img src={rice} alt="rice" />
-          </div>
-        </div>
-        <div className="right">
-          <h1>Just Pad Thai</h1>
-          <p>
-            Thanks to its unique taste, Pad Thai is without doubt # 1 on every
-            street food market. Our original recipe with rice noodles, spring
-            onions, tamarind, lime, peanuts and some chilli brings the aroma of
-            Thailand straight to your home. You chose your level of spiciness
-            adding our Sriracha sauce. Thai decision: Order it with chicken,
-            tofu or shrimps.
-          </p>
-          <div className="iconWrap">
-            <img src={noddle} alt="noddle" />
-          </div>
-        </div>
-      </div>
       </div>
       <div className="bottom">
         <div className="pics row">
-        <div className="imgDiv bottomPic">
-          <Img
-            className={"img"}
-            fluid={data.menuImgBottom.childImageSharp.fluid}
-          />
-          <Plx  className="span" parallaxData={parallaxMoveUp}>
-          </Plx>
-        </div>
-        <div className="oavalText">
-          <Img className={"img"} fluid={data.ovalText.childImageSharp.fluid} />
-          
-        </div>
+          <div className="imgDiv bottomPic">
+            <Img
+              className={"img"}
+              fluid={data.menuImgBottom.childImageSharp.fluid}
+            />
+            <Plx className="span" parallaxData={parallaxMoveUp}></Plx>
+          </div>
+          <div className="oavalText">
+            <Img
+              className={"img"}
+              fluid={data.ovalText.childImageSharp.fluid}
+            />
+          </div>
         </div>
         <h1>Spicy, salty, sweet and fresh </h1>
       </div>
