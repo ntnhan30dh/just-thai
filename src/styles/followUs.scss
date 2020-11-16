@@ -7,7 +7,7 @@
       flex-direction: column;
       align-items: center;
       background-color: $primary-colour;
-     }
+    }
     .text {
       width: 50%;
       background-color: #a0bc4a;
@@ -17,13 +17,17 @@
       padding: 0 10%;
       @media screen and (max-width: $tablet) {
         width: 100%;
-        padding: 0 ;
+        padding: 0;
         height: 40vh;
         position: relative;
         z-index: 10;
         justify-content: center;
-       }
-      
+      }
+
+      @media screen and (max-width: $mobile) {
+        height: 30vh;
+      }
+
       h1 {
         text-shadow: 7px 7px 0 #e51a6d;
         font-size: 4vw;
@@ -37,73 +41,102 @@
         @media screen and (max-width: $tablet) {
           font-size: 7vw;
           text-align: center;
-         }
+        }
+        @media screen and (max-width: $mobile) {
+          text-shadow: 5px 5px 0 #e51a6d;
+        }
+    
+        @media screen and (max-width: 500px) {
+          text-shadow: 3px 3px 0 #e51a6d;
+        }
       }
     }
-    .pic{
-        width: 50%;
-        @media screen and (max-width: $tablet) {
-          display: none;
-         }
+    .pic {
+      width: 50%;
+      @media screen and (max-width: $tablet) {
+        display: none;
+      }
     }
 
-    .pic_tablet{
+    .pic_tablet {
       width: 50%;
       margin-top: -20%;
       // z-index: -1;
       @media screen and (min-width: $tablet) {
         display: none;
-       }
+      }
+      @media screen and (max-width: $mobile) {
+        width: 60%;
+      }
+      @media screen and (max-width: 400px) {
+        margin-top: -10%;
+      }
     }
   }
-  .bottom{
-      width: 100%;
+  .bottom {
+    width: 100%;
+    display: flex;
+    background-color: $secondary-colour;
+    padding: 5rem 5%;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    .part {
+      width: 33%;
       display: flex;
-      background-color: $secondary-colour;
-      padding: 5rem 5%;
-      .part{
-          width: 33%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+      justify-content: center;
+      align-items: center;
+      @media screen and (max-width: 600px) {
+        width: 70%;
+        padding: 5% 0;
       }
-      .left{
-        h3 {
-            font-size: 3vw;
-            font-weight: 800;
-            font-stretch: normal;
-            font-style: italic;
-            line-height: normal;
-            letter-spacing: 1.46px;
-            color: $primary-colour;
-            text-transform: uppercase;
-          
-          }
-        flex-direction: column;
-        .icons{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .imgWrapper{
-                padding: 5px;
-            }
+    }
+    .left {
+      h3 {
+        font-size: 3vw;
+        font-weight: 800;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: normal;
+        letter-spacing: 1.46px;
+        color: $primary-colour;
+        text-transform: uppercase;
+        @media screen and (max-width: 600px) {
+          font-size: 25px;
         }
       }
+      flex-direction: column;
+      .icons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .imgWrapper {
+          padding: 5px;
+        }
+      }
+    }
 
-      .right {
-        ul{
-            font-size: 22px;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.59;
-            letter-spacing: 0px;
-            text-align: center;
-            color: $primary-colour;
-            list-style-type: none;
-            text-decoration: underline;
+    .right {
+      ul { 
+        font-size: 22px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.59;
+        letter-spacing: 0px;
+        color: $primary-colour;
+        list-style-type: none;
+        text-decoration: underline;
+        margin: 0; /* To remove default bottom margin */
+        padding: 0; /* To remove default left padding */
+        text-align: center;
+        @media screen and (max-width: $mobile) {
+          font-size: 20px;
         }
+        
       }
+    }
   }
 }

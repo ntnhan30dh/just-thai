@@ -81,7 +81,8 @@ const Followus = () => {
         <div className="part right">
           <ul>
             <li>Impressum </li>
-            <li>Privacy Policy Disclaimer</li>
+            <li>Privacy Policy</li>
+            <li> Disclaimer</li>
             <li>Terms & Conditions</li>
           </ul>
         </div>

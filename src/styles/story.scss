@@ -29,6 +29,14 @@
       overflow: hidden;
       white-space: nowrap;
       padding: 40px 0;
+      @media screen and (max-width: $mobile) {
+        padding: 20px 0;
+      }
+
+      @media screen and (max-width: 500px) {
+        font-size: 15px;
+        padding: 15px 0;
+      }
     }
   }
 
@@ -38,6 +46,9 @@
     // display: inline-block;
     width: 100%;
     //  border: 1px solid yellow;
+    @media screen and (max-width: 500px) {
+      padding-top: 4rem;
+   }
     .pic1 {
       width: 50%;
       @media screen and (max-width: $tablet) {
@@ -63,11 +74,22 @@
 
     .noddleWrap_tablet {
       position: relative;
-      width: 10rem;
+      width: 8rem;
 
+      @media screen and (max-width: 800px) {
+         width: 6rem;
+      }
+
+      @media screen and (max-width: 600px) {
+        width: 4rem;
+     }
       img {
+        width: 100%;
         position: absolute;
         top: 10%;
+        @media screen and (max-width: 500px) {
+          top: 0;
+       }
       }
 
       @media screen and (min-width: $tablet) {
@@ -127,6 +149,14 @@
       margin-top: -20%;
       font-size: 7vw;
     }
+
+    @media screen and (max-width: $mobile) {
+      text-shadow: 5px 5px 0 #e51a6d;
+    }
+
+    @media screen and (max-width: 500px) {
+      text-shadow: 3px 3px 0 #e51a6d;
+    }
   }
 
   .div4 {
@@ -153,12 +183,22 @@
     }
     .chickenWrap_tablet {
       position: relative;
-      width: 100px;
+      width: 8rem;
+      @media screen and (max-width: 800px) {
+        width: 6rem;
+     }
 
+     @media screen and (max-width: 600px) {
+      width: 4rem;
+   }
       img {
         position: absolute;
         left: 60%;
         top: 10%;
+        width: 100%;
+        @media screen and (max-width: 600px) {
+          top: 0;
+       }
       }
 
       @media screen and (min-width: $tablet) {
@@ -217,10 +257,21 @@
     .shrimpWrap {
       position: relative;
       width: 100px;
+      @media screen and (max-width: $tablet) {
+        width: 8rem;
+      }
+
+      @media screen and (max-width: 800px) {
+        width: 6rem;
+      }
+      @media screen and (max-width: 600px) {
+        width: 4rem;
+     }
       img {
         position: absolute;
         top: 50%;
         left: 150%;
+        width: 100%;
         @media screen and (max-width: $tablet) {
           top: 30%;
           left: 250%;
@@ -245,6 +296,13 @@
     @media screen and (min-width: $tablet) {
       display: none;
     }
+    @media screen and (max-width: $mobile) {
+      text-shadow: 5px 5px 0 #e51a6d;
+    }
+
+    @media screen and (max-width: 500px) {
+      text-shadow: 3px 3px 0 #e51a6d;
+    }
   }
 }
 .text_tablet {
@@ -260,6 +318,14 @@
   @media screen and (min-width: $tablet) {
     display: none;
   }
+  @media screen and (max-width: 600px) {
+    font-size: 1.8rem;
+    padding: 5% 10%;
+  }
+  @media screen and (max-width: 600px) {
+    // font-size: 1.5rem;
+     padding: 30px 10%;
+  }
 }
 @keyframes marquee {
   0% {
@@ -269,3 +335,4 @@
     transform: translate(-50%);
   }
 }
+

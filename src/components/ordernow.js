@@ -14,7 +14,9 @@ function OrderNow() {
       onOpen={() => setOpen(true)}
       open={open}
       trigger={<Button>
-        <img src={orderNowPic} alt="logo" />
+        <div className="imgDiv">
+        <img src={orderNowPic} alt="oder now" />
+        </div>
         </Button>}
     >
       <Modal.Header>Please select the country</Modal.Header>

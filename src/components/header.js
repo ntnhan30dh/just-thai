@@ -51,8 +51,8 @@ const Header = props => {
       }
     }
   `)
-  // let menuActive = props.menuState ? "is-inactive" : ""
-  // let change = props.menuState ? "change" : ""
+  let menuActive = props.menuState ? "is-inactive" : ""
+  let change = props.menuState ? "change" : ""
   const imageData = data.bgBig.childImageSharp.fluid
   const imageData2 = data.bgBig2.childImageSharp.fluid
   const handleResize = () => {
@@ -60,8 +60,6 @@ const Header = props => {
     console.log(window.innerWidth)
   }
   window.addEventListener("resize", handleResize)
-
-    
 
   return (
     <BackgroundImage
@@ -75,14 +73,20 @@ const Header = props => {
             <Link to="#" className="img_div">
               <img src={logo} alt="logo" />
             </Link>
-            {/* <div className={`burgerMenu  ${change}`} onClick={props.toggleMenu} onKeyDown={props.toggleMenu} role = "button" tabIndex={-1}>
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div> */}
+            <div
+              className={`burgerMenu  ${change}`}
+              onClick={props.toggleMenu}
+              onKeyDown={props.toggleMenu}
+              role="button"
+              tabIndex={-1}
+            >
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
           </div>
-          {/* <div className={`rightDiv row ${menuActive}`}> */}
-          <div className="rightDiv">
+          <div className={`rightDiv  ${menuActive}`}>
+            {/* <div className="rightDiv" > */}
             <ul>
               <li>
                 <Link to="#story">Our Story</Link>
