@@ -1,16 +1,41 @@
 import React from "react"
 import BackgroundImage from "gatsby-background-image"
 import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
+import Plx from "react-plx"
+
 
 import logo from "../images/logo.png"
 import facebook from "../images/facebook.png"
 import instagram from "../images/instagram.png"
+
+const parallaxMoveUp = [
+  {
+    start: "self",
+    duration: 300,
+    properties: [
+      {
+        startValue: -20,
+        endValue: 0,
+        property: "translateX",
+      },
+    ],
+  },
+]
 
 
 const Followus = () => {
   const data = useStaticQuery(graphql`
     {
       pic: file(relativePath: { eq: "followUsPic.png" }) {
+        childImageSharp {
+          fluid( maxWidth: 900) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      pic_tablet: file(relativePath: { eq: "followUsPic_tablet.png" }) {
         childImageSharp {
           fluid( maxWidth: 900) {
             ...GatsbyImageSharpFluid_withWebp
@@ -28,6 +53,13 @@ const Followus = () => {
           <h1>Holiday in Thailand <br/> from home? <br/> Yes, please!</h1>
         </div>
         <BackgroundImage className="pic" fluid={imageData}></BackgroundImage>
+        <div className="imgDiv pic_tablet">
+            <Img
+              className={"img"}
+              fluid={data.pic_tablet.childImageSharp.fluid}
+            />
+            <Plx className="span" parallaxData={parallaxMoveUp}></Plx>
+          </div>
       </div>
       <div className="bottom">
         <div className="part left">

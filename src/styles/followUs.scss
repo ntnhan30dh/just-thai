@@ -3,6 +3,11 @@
     min-height: 50vh;
     display: flex;
     width: 100%;
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+      align-items: center;
+      background-color: $primary-colour;
+     }
     .text {
       width: 50%;
       background-color: #a0bc4a;
@@ -10,6 +15,14 @@
       // justify-content: start; /* align horizontal */
       align-items: center;
       padding: 0 10%;
+      @media screen and (max-width: $tablet) {
+        width: 100%;
+        padding: 0 ;
+        height: 40vh;
+        position: relative;
+        z-index: 10;
+        justify-content: center;
+       }
       
       h1 {
         text-shadow: 7px 7px 0 #e51a6d;
@@ -20,17 +33,34 @@
         line-height: 1.14;
         letter-spacing: 0.02px;
         color: #ffffff;
+        text-transform: uppercase;
+        @media screen and (max-width: $tablet) {
+          font-size: 7vw;
+          text-align: center;
+         }
       }
     }
     .pic{
         width: 50%;
+        @media screen and (max-width: $tablet) {
+          display: none;
+         }
+    }
+
+    .pic_tablet{
+      width: 50%;
+      margin-top: -20%;
+      // z-index: -1;
+      @media screen and (min-width: $tablet) {
+        display: none;
+       }
     }
   }
   .bottom{
       width: 100%;
       display: flex;
       background-color: $secondary-colour;
-      padding: 5rem 0;
+      padding: 5rem 5%;
       .part{
           width: 33%;
           display: flex;
