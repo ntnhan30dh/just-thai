@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import logo from "../images/logo.png"
 import OrderNow from "./ordernow"
 import { Link } from "gatsby"
@@ -7,6 +7,7 @@ import BackgroundImage from "gatsby-background-image"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 import Plx from "react-plx"
+import {useMediaQuery} from '@react-hook/media-query'
 
 const parallaxMoveUp = [
   {
@@ -23,7 +24,7 @@ const parallaxMoveUp = [
 ]
 
 const Header = props => {
-  const [windowSize, setWindowSize] = useState(window.innerWidth)
+  // const [windowSize, setWindowSize] = useState(window.innerWidth)
   const data = useStaticQuery(graphql`
     {
       bgBig: file(relativePath: { eq: "bg-header-1.png" }) {
@@ -51,21 +52,25 @@ const Header = props => {
       }
     }
   `)
+ 
   let menuActive = props.menuState ? "is-inactive" : ""
   let change = props.menuState ? "change" : ""
-  const imageData = data.bgBig.childImageSharp.fluid
-  const imageData2 = data.bgBig2.childImageSharp.fluid
-  const handleResize = () => {
-    setWindowSize(window.innerWidth)
-    console.log(window.innerWidth)
-  }
-  window.addEventListener("resize", handleResize)
+ 
+  const matches = useMediaQuery('only screen and (min-width: 1000px)')
+
+  const imageData = matches?data.bgBig.childImageSharp.fluid:data.bgBig2.childImageSharp.fluid
+  
+  // const handleResize = () => {
+  //   setWindowSize(window.innerWidth)
+  //   console.log(window.innerWidth)
+  // }
+  // window.addEventListener("resize", handleResize)
 
   return (
     <BackgroundImage
       className="headerWrap"
       Tag="header"
-      fluid={windowSize > 1000 ? imageData : imageData2}
+      fluid={imageData}
     >
       <Sticky>
         <div className="nav">

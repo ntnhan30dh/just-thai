@@ -26,15 +26,15 @@ const IndexPage = () => {
       <Followus />
       <CookieConsent
         location="bottom"
-        buttonText="Accept"
+        buttonText="I AGREE"
         cookieName="myAwesomeCookieName2"
         style={{ background: "#2B373B" }}
         buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
         expires={150}
        // debug={true}
       >
-        <span style={{ fontSize: "17px" }}> We use cookies needed to run the website and for analytical purposes.{" "}
-          <a href="">  
+        <span className="cookie_consent"> We use cookies needed to run the website and for analytical purposes.{" "}
+          <a href="/">  
           More information
           </a>
           </span>
