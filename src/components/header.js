@@ -24,7 +24,6 @@ const parallaxMoveUp = [
 ]
 
 const Header = props => {
-  // const [windowSize, setWindowSize] = useState(window.innerWidth)
   const data = useStaticQuery(graphql`
     {
       bgBig: file(relativePath: { eq: "bg-header-1.png" }) {
@@ -59,12 +58,6 @@ const Header = props => {
   const matches = useMediaQuery('only screen and (min-width: 1000px)')
 
   const imageData = matches?data.bgBig.childImageSharp.fluid:data.bgBig2.childImageSharp.fluid
-  
-  // const handleResize = () => {
-  //   setWindowSize(window.innerWidth)
-  //   console.log(window.innerWidth)
-  // }
-  // window.addEventListener("resize", handleResize)
 
   return (
     <BackgroundImage
