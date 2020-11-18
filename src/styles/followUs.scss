@@ -114,7 +114,19 @@
         align-items: center;
         .imgWrapper {
           padding: 5px;
+          width:80px;
+          img{
+            width: 100%;
+          }
         }
+      }
+    }
+
+    .logoWrapper{
+      width: 112px;
+
+      img{
+        width: 100%;
       }
     }
 

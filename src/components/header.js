@@ -68,8 +68,10 @@ const Header = props => {
       <Sticky>
         <div className="nav">
           <div className="leftDiv">
-            <Link to="#" className="img_div">
+            <Link to="#">
+            <div className="imgWrap">
               <img src={logo} alt="logo" />
+            </div>
             </Link>
             <div
               className={`burgerMenu  ${change}`}
