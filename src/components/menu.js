@@ -94,7 +94,7 @@ const Menu = () => {
       <div className="topText">
         <h1>Check the favourites from our menu</h1>
         <p>
-          Thai-me to get excited! With Just Thai you can enjoy a variety of
+          With Just Thai you can enjoy a variety of
           all-time classics and modern Street Food specialties like soups, rise
           dishes and famous Thai noodles, including Pad Thai!
         </p>
@@ -120,7 +120,7 @@ const Menu = () => {
               </div>
             </h1>
             <p>
-              Everyone knows them, everyone loves them: Vegetarian spring rolls
+              Everyone knows them, everyone loves them: Vegetarian spring rolls are
               Thai cuisine crispy classics. We prepare them according to the
               recipe of our favorite cook Nang from the street food market in
               Bangkok and deliver them to you, with a fruity-sweet chili sauce.
