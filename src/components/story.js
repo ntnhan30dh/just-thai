@@ -77,9 +77,8 @@ const Story = () => {
           </Plx>
         </div>
         <div className="text">
-          Ordering from Just Thai is like having a Thai grandma cook authentic
-          meals on a food stall in Bangkok – and delivering them to you, no
-          matter where you are.
+        Just Thai restaurant delivers the dishes with exotic flavours from the Land of Smiles that will tingle your taste buds. 
+Our chefs work devotedly to create the tastiest recipes and create a menu with the best of Thai street food. And our delicious selection of dishes is just a tap away - we are delivering them to you, no matter where you are.
         </div>
         <div className="noddleWrap_tablet">
           <img src={noddle} alt="noddle" />
@@ -101,16 +100,13 @@ const Story = () => {
       
       <div className="div3 ">Crunchy, spicy, fresh, flavourful</div>
       <div className="text_tablet">
-          Ordering from Just Thai is like having a Thai grandma cook authentic
-          meals on a food stall in Bangkok – and delivering them to you, no
-          matter where you are.
+      Just Thai restaurant delivers the dishes with exotic flavours from the Land of Smiles that will tingle your taste buds. 
+Our chefs work devotedly to create the tastiest recipes and create a menu with the best of Thai street food. And our delicious selection of dishes is just a tap away - we are delivering them to you, no matter where you are.
+
         </div>
       <div className="div4 row">
         <div className="text">
-          While we draw inspiration from the bustling Thai street food culture
-          to offer an outstanding variety of flavours, we also pride ourselves
-          in carefully selecting healthy ingredients and the best recipes to
-          serve you, like a true local would do.
+        While we draw inspiration from the bustling Thai street food culture to offer an outstanding variety of flavours, we also pride ourselves in carefully selecting healthy ingredients and coming up with the best recipes to serve you. 
         </div>
         <div className="chickenWrap_tablet">
           <img src={chicken} alt="chicken" />
@@ -138,10 +134,7 @@ const Story = () => {
       </div>
      
       <div className="text_tablet">
-          While we draw inspiration from the bustling Thai street food culture
-          to offer an outstanding variety of flavours, we also pride ourselves
-          in carefully selecting healthy ingredients and the best recipes to
-          serve you, like a true local would do.
+      While we draw inspiration from the bustling Thai street food culture to offer an outstanding variety of flavours, we also pride ourselves in carefully selecting healthy ingredients and coming up with the best recipes to serve you. 
         </div>
     </section>
   )

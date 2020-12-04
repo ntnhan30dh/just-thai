@@ -120,10 +120,7 @@ const Menu = () => {
               </div>
             </h1>
             <p>
-              Everyone knows them, everyone loves them: Vegetarian spring rolls are
-              Thai cuisine crispy classics. We prepare them according to the
-              recipe of our favorite cook Nang from the street food market in
-              Bangkok and deliver them to you, with a fruity-sweet chili sauce.
+            Everyone knows them, everyone loves them: Vegetarian spring rolls are Thai cuisine’s crispy classics. With a tasty and soft filling inside and a golden crunchy wrapper outside, they match perfectly with a fruity sweet-chili sauce.
             </p>
             <div className="iconWrap">
               <img src={chicken} alt="chicken" />
@@ -184,12 +181,7 @@ const Menu = () => {
           <div className="right">
             <h1>Just Pad Thai</h1>
             <p>
-              Thanks to its unique taste, Pad Thai is without doubt # 1 on every
-              street food market. Our original recipe with rice noodles, spring
-              onions, tamarind, lime, peanuts and some chilli brings the aroma
-              of Thailand straight to your home. You chose your level of
-              spiciness adding our Sriracha sauce. Thai decision: Order it with
-              chicken, tofu or shrimps.
+            Thanks to its unique taste, Pad Thai is without a doubt the #1 in every street food market. Our recipe with rice noodles, spring onions, tamarind, lime, peanuts and a bit of chilli brings the aroma of Thailand straight into your home. You can adjust your level of spiciness adding our Sriracha sauce. Order it with chicken, tofu or shrimps.
             </p>
             <div className="iconWrap">
               <img src={noddle} alt="noddle" />

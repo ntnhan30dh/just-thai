@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect} from "react"
 import logo from "../images/logo.png"
 import OrderNow from "./ordernow"
 import { Link } from "gatsby"
@@ -58,7 +58,12 @@ const Header = props => {
   const matches = useMediaQuery('only screen and (min-width: 1000px)')
 
   const imageData = matches?data.bgBig.childImageSharp.fluid:data.bgBig2.childImageSharp.fluid
-
+  const [scroll, setScroll] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.scrollY > 50);
+    });
+  }, []);
   return (
     <BackgroundImage
       className="headerWrap"
@@ -66,7 +71,7 @@ const Header = props => {
       fluid={imageData}
     >
       <Sticky>
-        <div className="nav">
+        <div className={scroll ? "nav bgPink" : "nav"}>
           <div className="leftDiv">
             <Link to="#">
             <div className="imgWrap">
