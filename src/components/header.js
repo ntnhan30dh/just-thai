@@ -111,7 +111,7 @@ const Header = props => {
         </div>
       </Sticky>
       <div className="bottom">
-        <h1>Thai Street Food delivered </h1>
+        <h1>Thai Street Food, delivered </h1>
         <div className="imgDiv headerPic">
           <Img className={"img"} fluid={data.headerPic.childImageSharp.fluid} />
           <Plx className="span" parallaxData={parallaxMoveUp}></Plx>

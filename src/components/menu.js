@@ -53,16 +53,17 @@ const Menu = () => {
 
       menuImgBottom: file(relativePath: { eq: "menu-img-bottom.png" }) {
         childImageSharp {
-          fluid( maxWidth: 900) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
-     
 
-      menuImgBottom_tablet: file(relativePath: { eq: "menu-img-bottom_tablet.png" }) {
+      menuImgBottom_tablet: file(
+        relativePath: { eq: "menu-img-bottom_tablet.png" }
+      ) {
         childImageSharp {
-          fluid( maxWidth: 900) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -92,11 +93,11 @@ const Menu = () => {
         </div>
       </div>
       <div className="topText">
-        <h1>Check the favourites from our menu</h1>
+        <h1>Check favourites from our menu</h1>
         <p>
-          With Just Thai you can enjoy a variety of
-          all-time classics and modern Street Food specialties like soups, rise
-          dishes and famous Thai noodles, including Pad Thai!
+          With Just Thai you can enjoy an array of all-time classics and modern
+          Street Food specialties such as soups, rice dishes and famous noodles,
+          including Pad Thai!
         </p>
       </div>
       <div className="main">
@@ -120,7 +121,10 @@ const Menu = () => {
               </div>
             </h1>
             <p>
-            Everyone knows them, everyone loves them: Vegetarian spring rolls are Thai cuisine’s crispy classics. With a tasty and soft filling inside and a golden crunchy wrapper outside, they match perfectly with a fruity sweet-chili sauce.
+              Everyone knows them, everyone loves them: Vegetarian spring rolls
+              are Thai cuisine’s crispy classics. With a tasty and soft filling
+              inside a golden crunchy wrapper, they pair perfectly with a fruity
+              sweet-chili sauce.
             </p>
             <div className="iconWrap">
               <img src={chicken} alt="chicken" />
@@ -137,9 +141,9 @@ const Menu = () => {
             </h1>
             <p>
               No soup combines pleasant spicy and sour flavours as good as Tom
-              Yum. A strong broth ensures an intense taste, kaffir lime leaves
-              and lemongrass give the whole thing a fruity kick. Choose whether
-              you want to go with chicken, tofu or shrimp. Yum Yummy!
+              Yum. A strong broth ensures an intense taste, while kaffir lime
+              leaves and lemongrass give the whole thing a fruity kick. Choose
+              whether you want to go with chicken, tofu or shrimp. Yum Yum!
             </p>
             <div className="iconWrap">
               <img src={shrimp} alt="shrimp" />
@@ -158,14 +162,14 @@ const Menu = () => {
             </div>
           </div>
           <h2>
-              Tom Yum
-              <div>
-                <h2>Yum Soup</h2>
-              </div>
-            </h2>
+            Tom Yum
+            <div>
+              <h2>Yum Soup</h2>
+            </div>
+          </h2>
         </div>
         <div className="article row">
-        <h2>Just Pad Thai</h2>
+          <h2>Just Pad Thai</h2>
           <div className="left">
             <div className="imgDiv articlePic">
               <Img
@@ -181,7 +185,12 @@ const Menu = () => {
           <div className="right">
             <h1>Just Pad Thai</h1>
             <p>
-            Thanks to its unique taste, Pad Thai is without a doubt the #1 in every street food market. Our recipe with rice noodles, spring onions, tamarind, lime, peanuts and a bit of chilli brings the aroma of Thailand straight into your home. You can adjust your level of spiciness adding our Sriracha sauce. Order it with chicken, tofu or shrimps.
+              Thanks to its unique taste, Pad Thai is without a doubt the #1 in
+              every street food market. Our recipe with rice noodles, spring
+              onions, tamarind, lime, peanuts and a bit of chilli brings the
+              aroma of Thailand straight into your home. You can adjust your
+              level of spiciness adding our Sriracha sauce. Order it with
+              chicken, tofu or shrimps.
             </p>
             <div className="iconWrap">
               <img src={noddle} alt="noddle" />
@@ -191,7 +200,10 @@ const Menu = () => {
       </div>
       <div className="bottom">
         <div className="pics row">
-          <BackgroundImage className="bottomPic_tablet" fluid={imageData}></BackgroundImage>
+          <BackgroundImage
+            className="bottomPic_tablet"
+            fluid={imageData}
+          ></BackgroundImage>
           <div className="imgDiv bottomPic">
             <Img
               className={"img"}
