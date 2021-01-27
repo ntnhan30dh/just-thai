@@ -107,7 +107,7 @@ const Story = () => {
       </div>
       <div className="div4 row">
         <div className="text">
-        While we draw inspiration from the bustling Thai street food culture to offer an outstanding fusion of flavours, we also pride ourselves in carefully selecting healthy ingredients to cook carefully - just for you.
+        While we draw inspiration from the bustling Thai street food culture to offer an outstanding fusion of flavours, we also pride ourselves in carefully selecting healthy ingredients to cook - just for you.
         </div>
         <div className="chickenWrap_tablet">
           <img src={chicken} alt="chicken" />
@@ -131,7 +131,7 @@ const Story = () => {
       </div>
 
       <div className="text_tablet">
-      While we draw inspiration from the bustling Thai street food culture to offer an outstanding fusion of flavours, we also pride ourselves in carefully selecting healthy ingredients to cook carefully - just for you.
+      While we draw inspiration from the bustling Thai street food culture to offer an outstanding fusion of flavours, we also pride ourselves in carefully selecting healthy ingredients to cook - just for you.
       </div>
     </section>
   )

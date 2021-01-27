@@ -121,7 +121,7 @@ const Menu = () => {
               </div>
             </h1>
             <p>
-              Everyone knows them, everyone loves them: Vegetarian spring rolls
+              Everyone knows them, everybody loves them: Vegetarian spring rolls
               are Thai cuisine’s crispy classics. With a tasty and soft filling
               inside a golden crunchy wrapper, they pair perfectly with a fruity
               sweet-chili sauce.
