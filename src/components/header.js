@@ -73,7 +73,7 @@ const Header = props => {
       <Sticky>
         <div className={scroll ? "nav bgPink" : "nav"}>
           <div className="leftDiv">
-            <Link to="#">
+            <Link to="/">
             <div className="imgWrap">
               <img src={logo} alt="logo" />
             </div>
@@ -94,16 +94,16 @@ const Header = props => {
             {/* <div className="rightDiv" > */}
             <ul>
               <li>
-                <Link to="#story">Our Story</Link>
+                <Link to="/#story">Our Story</Link>
               </li>
               <li>
-                <Link to="#menu">Menu</Link>
+                <Link to="/#menu">Menu</Link>
               </li>
               <li>
-                <Link to="#follow">Follow Us</Link>
+                <Link to="/#follow">Follow Us</Link>
               </li>
               <li>
-                <Link to="#follow">Contact</Link>
+                <Link to="/#follow">Contact</Link>
               </li>
             </ul>
             <OrderNow />

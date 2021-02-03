@@ -3,6 +3,7 @@ import BackgroundImage from "gatsby-background-image"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import Plx from "react-plx"
+import { Link } from "gatsby"
 
 
 import logo from "../images/logo.png"
@@ -79,12 +80,17 @@ const Followus = () => {
             </div>
         </div>
         <div className="part right">
-          <ul>
-            <li>Impressum </li>
-            <li>Privacy Policy</li>
-            <li> Disclaimer</li>
-            <li>Terms & Conditions</li>
-          </ul>
+        <ul>
+          <li>
+            <Link to="/imprint">Imprint</Link>
+            </li>
+            <li>
+            <Link to="/privacy">Privacy Policy </Link>
+            </li>
+            <li>
+            <Link to="/disclaimer">Disclaimer</Link>
+            </li>
+        </ul>
         </div>
       </div>
     </div>
