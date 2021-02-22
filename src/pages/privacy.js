@@ -37,7 +37,7 @@ const IndexPage = () => {
         </p>
         <p>
           All information will be processed by the Data Controller: <br />
-          Just Thai Delivery Hero SE <br />
+          Delivery Hero SE <br />
           Oranienburger Straße 70 <br />
           10117 Berlin <br />
           If you require additional information or have any concerns about the
